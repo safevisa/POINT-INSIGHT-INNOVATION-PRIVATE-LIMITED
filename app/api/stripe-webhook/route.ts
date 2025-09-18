@@ -3,7 +3,15 @@ import { stripe } from "@/lib/stripe"
 import { prisma } from "@/lib/prisma"
 import { headers } from "next/headers"
 
+// Check if we're in build time
+const isBuildTime = !process.env.STRIPE_SECRET_KEY
+
 export async function POST(request: NextRequest) {
+  // Skip processing during build time
+  if (isBuildTime) {
+    return NextResponse.json({ error: "Service unavailable during build" }, { status: 503 })
+  }
+
   const body = await request.text()
   const signature = headers().get("stripe-signature")
 

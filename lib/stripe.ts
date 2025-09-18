@@ -1,12 +1,27 @@
 import Stripe from 'stripe'
 
-if (!process.env.STRIPE_SECRET_KEY) {
-  throw new Error('STRIPE_SECRET_KEY is not set')
+// Check if we're in build time or if Stripe key is not available
+const isBuildTime = !process.env.STRIPE_SECRET_KEY
+
+// Create Stripe instance with build-time handling
+const createStripeInstance = () => {
+  if (isBuildTime) {
+    // Return a mock Stripe instance for build time
+    return new Stripe('sk_test_mock_key_for_build_time', {
+      apiVersion: '2023-10-16',
+    })
+  }
+
+  if (!process.env.STRIPE_SECRET_KEY) {
+    throw new Error('STRIPE_SECRET_KEY is not set')
+  }
+
+  return new Stripe(process.env.STRIPE_SECRET_KEY, {
+    apiVersion: '2023-10-16',
+  })
 }
 
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
-  apiVersion: '2023-10-16',
-})
+export const stripe = createStripeInstance()
 
 export const formatAmountForStripe = (amount: number, currency: string): number => {
   const numberFormat = new Intl.NumberFormat(['en-US'], {
