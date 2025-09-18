@@ -7,7 +7,9 @@
       "maxDuration": 30
     }
   },
-  "env": {
-    "DATABASE_URL": "@database_url"
+  "build": {
+    "env": {
+      "SKIP_ENV_VALIDATION": "1"
+    }
   }
 }

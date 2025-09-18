@@ -3,6 +3,9 @@ import CredentialsProvider from "next-auth/providers/credentials"
 import bcrypt from "bcryptjs"
 import { prisma } from "./prisma"
 
+// Check if we're in build time
+const isBuildTime = process.env.NODE_ENV === 'production' && !process.env.DATABASE_URL
+
 export const authOptions: NextAuthOptions = {
   providers: [
     CredentialsProvider({
@@ -16,29 +19,39 @@ export const authOptions: NextAuthOptions = {
           return null
         }
 
-        // 在数据库中查找用户
-        const user = await prisma.user.findUnique({
-          where: { email: credentials.email }
-        })
-
-        if (!user || !user.password) {
+        // Skip database operations during build time
+        if (isBuildTime) {
           return null
         }
 
-        const isPasswordValid = await bcrypt.compare(
-          credentials.password,
-          user.password
-        )
+        try {
+          // 在数据库中查找用户
+          const user = await prisma.user.findUnique({
+            where: { email: credentials.email }
+          })
 
-        if (!isPasswordValid) {
+          if (!user || !user.password) {
+            return null
+          }
+
+          const isPasswordValid = await bcrypt.compare(
+            credentials.password,
+            user.password
+          )
+
+          if (!isPasswordValid) {
+            return null
+          }
+
+          return {
+            id: user.id,
+            email: user.email,
+            name: user.name,
+            image: user.image,
+          }
+        } catch (error) {
+          console.error('Auth error:', error)
           return null
-        }
-
-        return {
-          id: user.id,
-          email: user.email,
-          name: user.name,
-          image: user.image,
         }
       }
     })
