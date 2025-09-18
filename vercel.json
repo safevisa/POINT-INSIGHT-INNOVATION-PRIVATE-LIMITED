@@ -11,5 +11,12 @@
     "env": {
       "SKIP_ENV_VALIDATION": "1"
     }
-  }
+  },
+  "regions": ["iad1"],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/$1"
+    }
+  ]
 }
