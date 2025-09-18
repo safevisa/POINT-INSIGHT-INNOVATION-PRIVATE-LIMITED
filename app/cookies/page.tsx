@@ -133,10 +133,10 @@ export default function CookiesPage() {
                   您可以通过浏览器设置控制Cookie：
                 </p>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Chrome: 设置 > 隐私和安全 > Cookie</li>
-                  <li>• Firefox: 选项 > 隐私与安全 > Cookie</li>
-                  <li>• Safari: 偏好设置 > 隐私 > Cookie</li>
-                  <li>• Edge: 设置 > Cookie和站点权限</li>
+                  <li>• Chrome: 设置 &gt; 隐私和安全 &gt; Cookie</li>
+                  <li>• Firefox: 选项 &gt; 隐私与安全 &gt; Cookie</li>
+                  <li>• Safari: 偏好设置 &gt; 隐私 &gt; Cookie</li>
+                  <li>• Edge: 设置 &gt; Cookie和站点权限</li>
                 </ul>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg">
