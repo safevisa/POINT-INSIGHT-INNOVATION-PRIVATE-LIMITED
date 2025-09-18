@@ -1,12 +1,14 @@
 'use client'
 
 import Link from 'next/link'
+import { useSession } from 'next-auth/react'
 import { useTranslation } from 'react-i18next'
 import { ArrowRight, Shield, BarChart3, CreditCard, Headphones } from 'lucide-react'
 import Navbar from '@/components/Navbar'
 
 export default function HomePage() {
   const { t } = useTranslation()
+  const { data: session } = useSession()
 
   return (
     <div className="min-h-screen bg-white">
@@ -201,7 +203,7 @@ export default function HomePage() {
                 </li>
               </ul>
               <Link
-                href="/auth/signup"
+                href={session ? "/payments?plan=free" : "/auth/signup"}
                 className="btn-primary w-full"
               >
                 {t('nav.freeTrial')}
@@ -242,7 +244,7 @@ export default function HomePage() {
                 </li>
               </ul>
               <Link
-                href="/auth/signup"
+                href={session ? "/payments?plan=starter" : "/auth/signup"}
                 className="btn-primary w-full"
               >
                 Get Started
@@ -282,7 +284,7 @@ export default function HomePage() {
                 </li>
               </ul>
               <Link
-                href="/auth/signup"
+                href={session ? "/payments?plan=professional" : "/auth/signup"}
                 className="btn-primary w-full"
               >
                 Get Started
@@ -322,7 +324,7 @@ export default function HomePage() {
                 </li>
               </ul>
               <Link
-                href="/auth/signup"
+                href={session ? "/payments?plan=enterprise" : "/auth/signup"}
                 className="btn-primary w-full"
               >
                 Contact Sales

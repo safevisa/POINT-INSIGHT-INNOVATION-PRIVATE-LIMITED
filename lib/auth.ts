@@ -1,7 +1,7 @@
 import { NextAuthOptions } from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials"
 import bcrypt from "bcryptjs"
-import { findUserByEmail } from "./memory-storage"
+import { prisma } from "./prisma"
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -16,8 +16,10 @@ export const authOptions: NextAuthOptions = {
           return null
         }
 
-        // 在共享存储中查找用户
-        const user = findUserByEmail(credentials.email)
+        // 在数据库中查找用户
+        const user = await prisma.user.findUnique({
+          where: { email: credentials.email }
+        })
 
         if (!user || !user.password) {
           return null

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server"
 import bcrypt from "bcryptjs"
 import { signUpSchema } from "@/lib/validations"
-import { addUser, findUserByEmail } from "@/lib/memory-storage"
+import { prisma } from "@/lib/prisma"
 
 export async function POST(request: NextRequest) {
   try {
@@ -9,7 +9,9 @@ export async function POST(request: NextRequest) {
     const { name, email, password } = signUpSchema.parse(body)
 
     // Check if user already exists
-    const existingUser = findUserByEmail(email)
+    const existingUser = await prisma.user.findUnique({
+      where: { email }
+    })
 
     if (existingUser) {
       return NextResponse.json(
@@ -21,17 +23,15 @@ export async function POST(request: NextRequest) {
     // Hash password
     const hashedPassword = await bcrypt.hash(password, 12)
 
-    // Create user (temporary storage)
-    const user = {
-      id: `user_${Date.now()}`,
-      name,
-      email,
-      password: hashedPassword,
-      trialEndsAt: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000), // 14 days trial
-      createdAt: new Date(),
-    }
-
-    addUser(user)
+    // Create user in database
+    const user = await prisma.user.create({
+      data: {
+        name,
+        email,
+        password: hashedPassword,
+        trialEndsAt: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000), // 14 days trial
+      }
+    })
 
     return NextResponse.json(
       { message: "User created successfully", userId: user.id },
