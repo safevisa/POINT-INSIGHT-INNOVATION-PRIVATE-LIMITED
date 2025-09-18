@@ -108,7 +108,7 @@ function PaymentForm({ amount, onSuccess }: PaymentFormProps) {
 
 const plans = {
   free: { name: 'Free Trial', price: 0, description: '14 days free trial' },
-  starter: { name: 'Starter', price: 29, description: '适合小型运营' },
+  starter: { name: 'Starter', price: 29, description: 'Perfect for small operations' },
   professional: { name: 'Professional', price: 79, description: 'Perfect for growing businesses' },
   enterprise: { name: 'Enterprise', price: 199, description: 'For large operations' }
 }
@@ -128,7 +128,7 @@ export default function PaymentsPage() {
       return
     }
     
-    // 处理URL参数中的计划选择
+    // Handle plan selection from URL parameters
     const plan = searchParams.get('plan')
     if (plan && plans[plan as keyof typeof plans]) {
       setSelectedPlan(plan)

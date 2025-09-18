@@ -238,8 +238,8 @@ export default function ProfilePage() {
                     </label>
                     <select {...register('language')} className="form-input">
                       <option value="en">English</option>
-                      <option value="zh">中文</option>
-                      <option value="zh-TW">繁體中文</option>
+                      <option value="zh">Chinese (Simplified)</option>
+                      <option value="zh-TW">Chinese (Traditional)</option>
                     </select>
                   </div>
                   <div>

@@ -51,7 +51,7 @@ export default function HomePage() {
               {t('home.features.title')}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              专为无人售货机设计的完整解决方案，让您的零售业务更智能、更高效
+              Complete solution designed for vending machines, making your retail business smarter and more efficient
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -108,10 +108,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              无人售货机解决方案
+              Vending Machine Solutions
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              从传统售货机到智能零售终端，我们提供全方位的技术支持和运营管理
+              From traditional vending machines to smart retail terminals, we provide comprehensive technical support and operational management
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -119,45 +119,45 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
                 <div className="w-6 h-6 bg-blue-600 rounded"></div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">智能售货机</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Smart Vending Machines</h3>
               <p className="text-gray-600 mb-6">
-                支持多种支付方式，实时库存管理，智能补货提醒，让您的售货机运营更高效
+                Support for multiple payment methods, real-time inventory management, smart restocking alerts, making your vending machine operations more efficient
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
-                <li>• 支持微信、支付宝、银行卡支付</li>
-                <li>• 实时销售数据分析</li>
-                <li>• 自动库存预警</li>
-                <li>• 远程设备监控</li>
+                <li>• Support for WeChat, Alipay, and bank card payments</li>
+                <li>• Real-time sales data analysis</li>
+                <li>• Automatic inventory alerts</li>
+                <li>• Remote device monitoring</li>
               </ul>
             </div>
             <div className="bg-white rounded-lg shadow-md p-8">
               <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6">
                 <div className="w-6 h-6 bg-green-600 rounded"></div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">生鲜售货机</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Fresh Food Vending Machines</h3>
               <p className="text-gray-600 mb-6">
-                专为生鲜商品设计的温控售货机，保持商品新鲜，提供24小时便民服务
+                Temperature-controlled vending machines designed for fresh products, maintaining product freshness and providing 24-hour convenience services
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
-                <li>• 智能温控系统</li>
-                <li>• 商品保质期管理</li>
-                <li>• 冷链物流支持</li>
-                <li>• 食品安全监控</li>
+                <li>• Smart temperature control system</li>
+                <li>• Product shelf life management</li>
+                <li>• Cold chain logistics support</li>
+                <li>• Food safety monitoring</li>
               </ul>
             </div>
             <div className="bg-white rounded-lg shadow-md p-8">
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
                 <div className="w-6 h-6 bg-purple-600 rounded"></div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">咖啡售货机</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Coffee Vending Machines</h3>
               <p className="text-gray-600 mb-6">
-                现磨咖啡售货机，多种口味选择，现做现卖，为消费者提供高品质咖啡体验
+                Fresh ground coffee vending machines with multiple flavor options, made-to-order, providing consumers with high-quality coffee experience
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
-                <li>• 现磨咖啡制作</li>
-                <li>• 多种口味选择</li>
-                <li>• 自动清洁系统</li>
-                <li>• 原料自动补充</li>
+                <li>• Fresh ground coffee making</li>
+                <li>• Multiple flavor options</li>
+                <li>• Automatic cleaning system</li>
+                <li>• Automatic ingredient replenishment</li>
               </ul>
             </div>
           </div>
@@ -172,7 +172,7 @@ export default function HomePage() {
               {t('home.pricing.title')}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              灵活的价格方案，满足不同规模的无人售货机运营需求
+              Flexible pricing plans to meet the operational needs of vending machines at different scales
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -187,19 +187,19 @@ export default function HomePage() {
               <ul className="text-left space-y-2 mb-8">
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  最多3台设备
+                  Up to 3 devices
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  基础数据分析
+                  Basic data analytics
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  邮件支持
+                  Email support
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  基础支付功能
+                  Basic payment features
                 </li>
               </ul>
               <Link
@@ -217,30 +217,30 @@ export default function HomePage() {
                 </span>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
-              <div className="text-4xl font-bold text-primary-600 mb-4">$29<span className="text-lg text-gray-500">/月</span></div>
+              <div className="text-4xl font-bold text-primary-600 mb-4">$29<span className="text-lg text-gray-500">/month</span></div>
               <p className="text-gray-600 mb-6">
-                适合小型运营
+                Perfect for small operations
               </p>
               <ul className="text-left space-y-2 mb-8">
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  最多10台设备
+                  Up to 10 devices
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  高级数据分析
+                  Advanced data analytics
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  实时库存管理
+                  Real-time inventory management
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  电话支持
+                  Phone support
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  多种支付方式
+                  Multiple payment methods
                 </li>
               </ul>
               <Link
@@ -253,34 +253,34 @@ export default function HomePage() {
 
             <div className="bg-white rounded-lg shadow-md p-8 text-center">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Professional</h3>
-              <div className="text-4xl font-bold text-primary-600 mb-4">$79<span className="text-lg text-gray-500">/月</span></div>
+              <div className="text-4xl font-bold text-primary-600 mb-4">$79<span className="text-lg text-gray-500">/month</span></div>
               <p className="text-gray-600 mb-6">
                 {t('home.pricing.proDesc')}
               </p>
               <ul className="text-left space-y-2 mb-8">
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  最多50台设备
+                  Up to 50 devices
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  完整数据分析
+                  Complete data analytics
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  智能补货提醒
+                  Smart restocking alerts
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  24/7技术支持
+                  24/7 technical support
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  自定义报告
+                  Custom reports
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  API接口
+                  API integration
                 </li>
               </ul>
               <Link
@@ -293,34 +293,34 @@ export default function HomePage() {
 
             <div className="bg-white rounded-lg shadow-md p-8 text-center">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Enterprise</h3>
-              <div className="text-4xl font-bold text-primary-600 mb-4">$199<span className="text-lg text-gray-500">/月</span></div>
+              <div className="text-4xl font-bold text-primary-600 mb-4">$199<span className="text-lg text-gray-500">/month</span></div>
               <p className="text-gray-600 mb-6">
                 {t('home.pricing.enterpriseDesc')}
               </p>
               <ul className="text-left space-y-2 mb-8">
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  无限设备数量
+                  Unlimited devices
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  高级AI分析
+                  Advanced AI analytics
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  专属客户经理
+                  Dedicated account manager
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  定制化开发
+                  Custom development
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  多区域管理
+                  Multi-region management
                 </li>
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  白标解决方案
+                  White-label solutions
                 </li>
               </ul>
               <Link
@@ -339,24 +339,24 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              关于POINT INSIGHT INNOVATION
+              About POINT INSIGHT INNOVATION
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              我们致力于通过创新技术推动无人零售行业的发展，为全球客户提供最优质的SaaS解决方案
+              We are committed to advancing the unmanned retail industry through innovative technology, providing the highest quality SaaS solutions for global customers
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="text-4xl font-bold text-primary-600 mb-2">500+</div>
-              <p className="text-gray-600">服务客户</p>
+              <p className="text-gray-600">Served Clients</p>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary-600 mb-2">10,000+</div>
-              <p className="text-gray-600">管理设备</p>
+              <p className="text-gray-600">Managed Devices</p>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary-600 mb-2">99.9%</div>
-              <p className="text-gray-600">服务可用性</p>
+              <p className="text-gray-600">Service Availability</p>
             </div>
           </div>
         </div>
@@ -375,10 +375,10 @@ export default function HomePage() {
                 <span className="text-xl font-bold">POINT INSIGHT INNOVATION</span>
               </div>
               <p className="text-gray-400 mb-4 max-w-md">
-                专业的无人零售SaaS解决方案提供商，致力于通过创新技术推动零售行业的数字化转型。
+                Professional unmanned retail SaaS solution provider, committed to driving digital transformation in the retail industry through innovative technology.
               </p>
               <div className="space-y-2 text-sm text-gray-400">
-                <p>📍 新加坡</p>
+                <p>📍 Singapore</p>
                 <p>📧 support@point-insight.com</p>
                 <p>📞 +65-1234-5678</p>
               </div>
@@ -386,25 +386,25 @@ export default function HomePage() {
 
             {/* Quick Links */}
             <div>
-              <h3 className="text-lg font-semibold mb-4">快速链接</h3>
+              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
-                <li><Link href="/" className="text-gray-400 hover:text-white transition-colors">首页</Link></li>
-                <li><Link href="/#features" className="text-gray-400 hover:text-white transition-colors">功能特性</Link></li>
-                <li><Link href="/#solutions" className="text-gray-400 hover:text-white transition-colors">解决方案</Link></li>
-                <li><Link href="/#pricing" className="text-gray-400 hover:text-white transition-colors">定价</Link></li>
-                <li><Link href="/#about" className="text-gray-400 hover:text-white transition-colors">关于我们</Link></li>
+                <li><Link href="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
+                <li><Link href="/#features" className="text-gray-400 hover:text-white transition-colors">Features</Link></li>
+                <li><Link href="/#solutions" className="text-gray-400 hover:text-white transition-colors">Solutions</Link></li>
+                <li><Link href="/#pricing" className="text-gray-400 hover:text-white transition-colors">Pricing</Link></li>
+                <li><Link href="/#about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
               </ul>
             </div>
 
             {/* Legal */}
             <div>
-              <h3 className="text-lg font-semibold mb-4">法律条款</h3>
+              <h3 className="text-lg font-semibold mb-4">Legal</h3>
               <ul className="space-y-2">
-                <li><Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">隐私政策</Link></li>
-                <li><Link href="/terms" className="text-gray-400 hover:text-white transition-colors">服务条款</Link></li>
-                <li><Link href="/data-protection" className="text-gray-400 hover:text-white transition-colors">数据保护协议</Link></li>
-                <li><Link href="/cookies" className="text-gray-400 hover:text-white transition-colors">Cookie政策</Link></li>
-                <li><Link href="/gdpr" className="text-gray-400 hover:text-white transition-colors">GDPR合规</Link></li>
+                <li><Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</Link></li>
+                <li><Link href="/terms" className="text-gray-400 hover:text-white transition-colors">Terms of Service</Link></li>
+                <li><Link href="/data-protection" className="text-gray-400 hover:text-white transition-colors">Data Protection Agreement</Link></li>
+                <li><Link href="/cookies" className="text-gray-400 hover:text-white transition-colors">Cookie Policy</Link></li>
+                <li><Link href="/gdpr" className="text-gray-400 hover:text-white transition-colors">GDPR Compliance</Link></li>
               </ul>
             </div>
           </div>
@@ -415,10 +415,10 @@ export default function HomePage() {
                 © 2024 POINT INSIGHT INNOVATION PRIVATE LIMITED. All rights reserved.
               </p>
               <div className="flex space-x-6 text-sm text-gray-500">
-                <Link href="/privacy" className="hover:text-white transition-colors">隐私政策</Link>
-                <Link href="/terms" className="hover:text-white transition-colors">服务条款</Link>
-                <Link href="/data-protection" className="hover:text-white transition-colors">数据保护</Link>
-                <Link href="/cookies" className="hover:text-white transition-colors">Cookie设置</Link>
+                <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+                <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+                <Link href="/data-protection" className="hover:text-white transition-colors">Data Protection</Link>
+                <Link href="/cookies" className="hover:text-white transition-colors">Cookie Settings</Link>
               </div>
             </div>
           </div>

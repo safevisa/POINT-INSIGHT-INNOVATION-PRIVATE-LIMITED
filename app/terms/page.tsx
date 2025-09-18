@@ -7,138 +7,162 @@ export default function TermsPage() {
       
       <div className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">服务条款</h1>
-          <p className="text-gray-600">最后更新：2024年9月18日</p>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Terms of Service</h1>
+          <p className="text-gray-600">Last updated: September 18, 2024</p>
         </div>
 
         <div className="prose max-w-none">
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. 服务描述</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Service Description</h2>
             <p className="text-gray-700 mb-4">
-              POINT INSIGHT INNOVATION PRIVATE LIMITED（"我们"、"公司"）提供无人零售SaaS平台服务，
-              包括但不限于售货机管理、支付处理、数据分析、库存管理等功能。
+              POINT INSIGHT INNOVATION PRIVATE LIMITED ("we", "us", "company") provides unmanned retail SaaS platform services,
+              including but not limited to vending machine management, payment processing, data analytics, inventory management, and other features.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. 用户责任</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. User Responsibilities</h2>
             <p className="text-gray-700 mb-4">
-              作为服务用户，您同意：
+              As a service user, you agree to:
             </p>
             <ul className="list-disc pl-6 text-gray-700 mb-4">
-              <li>提供真实、准确、完整的信息</li>
-              <li>维护账户信息的保密性</li>
-              <li>遵守所有适用的法律法规</li>
-              <li>不得将服务用于非法目的</li>
-              <li>不得干扰或破坏服务运行</li>
-              <li>不得侵犯他人的知识产权</li>
+              <li>Provide true, accurate, and complete information</li>
+              <li>Maintain the confidentiality of your account information</li>
+              <li>Use the service in compliance with applicable laws and regulations</li>
+              <li>Not engage in any illegal or unauthorized activities</li>
+              <li>Not interfere with or disrupt the service or servers</li>
+              <li>Not attempt to gain unauthorized access to any part of the service</li>
             </ul>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">3. 服务可用性</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">3. Service Availability</h2>
             <p className="text-gray-700 mb-4">
-              我们努力保持服务的高可用性，但不保证服务不会中断。我们可能因以下原因暂停服务：
+              We strive to provide continuous service availability but cannot guarantee 100% uptime. We reserve the right to:
             </p>
             <ul className="list-disc pl-6 text-gray-700 mb-4">
-              <li>系统维护和升级</li>
-              <li>技术故障或不可抗力</li>
-              <li>安全威胁或法律要求</li>
-              <li>用户违反服务条款</li>
+              <li>Perform scheduled maintenance and updates</li>
+              <li>Suspend service for emergency repairs</li>
+              <li>Modify or discontinue features with reasonable notice</li>
+              <li>Implement security measures as needed</li>
             </ul>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. 支付和计费</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. Payment Terms</h2>
             <p className="text-gray-700 mb-4">
-              服务费用按照您选择的订阅计划收取：
+              Payment terms and conditions:
+            </p>
+            <div className="space-y-4">
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <h3 className="text-lg font-semibold text-blue-900 mb-2">Billing</h3>
+                <ul className="text-blue-800 text-sm space-y-1">
+                  <li>• Fees are charged in advance on a monthly or annual basis</li>
+                  <li>• All fees are non-refundable unless otherwise specified</li>
+                  <li>• Prices are subject to change with 30 days notice</li>
+                  <li>• Late payments may result in service suspension</li>
+                </ul>
+              </div>
+
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h3 className="text-lg font-semibold text-green-900 mb-2">Free Trial</h3>
+                <ul className="text-green-800 text-sm space-y-1">
+                  <li>• 14-day free trial available for new users</li>
+                  <li>• No credit card required for trial signup</li>
+                  <li>• Trial automatically converts to paid plan unless cancelled</li>
+                  <li>• Trial features may be limited compared to paid plans</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">5. Intellectual Property</h2>
+            <p className="text-gray-700 mb-4">
+              All content, features, and functionality of the service are owned by POINT INSIGHT INNOVATION PRIVATE LIMITED and are protected by copyright, trademark, and other intellectual property laws.
+            </p>
+            <div className="bg-yellow-50 p-6 rounded-lg">
+              <h3 className="text-lg font-semibold text-yellow-900 mb-2">User License</h3>
+              <p className="text-yellow-800 text-sm mb-3">
+                We grant you a limited, non-exclusive, non-transferable license to use the service for your business purposes only.
+              </p>
+              <ul className="text-yellow-700 text-sm space-y-1">
+                <li>• You may not copy, modify, or distribute the service</li>
+                <li>• You may not reverse engineer or attempt to extract source code</li>
+                <li>• You may not use the service for competitive purposes</li>
+                <li>• This license terminates when you stop using the service</li>
+              </ul>
+            </div>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">6. Data and Privacy</h2>
+            <p className="text-gray-700 mb-4">
+              Your privacy is important to us. Please review our Privacy Policy to understand how we collect, use, and protect your information.
+            </p>
+            <div className="bg-purple-50 p-6 rounded-lg">
+              <h3 className="text-lg font-semibold text-purple-900 mb-2">Data Ownership</h3>
+              <ul className="text-purple-800 text-sm space-y-1">
+                <li>• You retain ownership of your business data</li>
+                <li>• We may use aggregated, anonymized data for service improvement</li>
+                <li>• We will not share your data with third parties without consent</li>
+                <li>• You can export your data at any time</li>
+              </ul>
+            </div>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">7. Limitation of Liability</h2>
+            <p className="text-gray-700 mb-4">
+              To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the service.
+            </p>
+            <div className="bg-red-50 p-6 rounded-lg">
+              <h3 className="text-lg font-semibold text-red-900 mb-2">Disclaimer</h3>
+              <p className="text-red-800 text-sm">
+                The service is provided "as is" without warranties of any kind, either express or implied. We do not warrant that the service will be uninterrupted, error-free, or secure.
+              </p>
+            </div>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">8. Termination</h2>
+            <p className="text-gray-700 mb-4">
+              Either party may terminate this agreement at any time:
             </p>
             <ul className="list-disc pl-6 text-gray-700 mb-4">
-              <li>费用在服务开始时收取</li>
-              <li>自动续费（除非取消）</li>
-              <li>价格可能随时调整（提前30天通知）</li>
-              <li>逾期付款可能导致服务暂停</li>
-              <li>退款政策按具体情况处理</li>
+              <li>You may cancel your subscription at any time through your account settings</li>
+              <li>We may suspend or terminate your account for violation of these terms</li>
+              <li>Termination does not relieve you of payment obligations for services already provided</li>
+              <li>Upon termination, your access to the service will cease immediately</li>
             </ul>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">5. 知识产权</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">9. Governing Law</h2>
             <p className="text-gray-700 mb-4">
-              服务及其所有内容受知识产权法律保护：
+              These terms shall be governed by and construed in accordance with the laws of Singapore. Any disputes arising from these terms shall be subject to the exclusive jurisdiction of the courts of Singapore.
             </p>
-            <ul className="list-disc pl-6 text-gray-700 mb-4">
-              <li>我们保留所有权利、所有权和利益</li>
-              <li>用户不得复制、修改或分发服务</li>
-              <li>用户数据归用户所有</li>
-              <li>我们有权使用匿名数据进行改进</li>
-            </ul>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">6. 数据安全</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">10. Changes to Terms</h2>
             <p className="text-gray-700 mb-4">
-              我们承诺保护您的数据安全：
+              We reserve the right to modify these terms at any time. We will notify users of material changes via email or through the service. Continued use of the service after changes constitutes acceptance of the new terms.
             </p>
-            <ul className="list-disc pl-6 text-gray-700 mb-4">
-              <li>采用行业标准安全措施</li>
-              <li>定期备份数据</li>
-              <li>限制数据访问权限</li>
-              <li>监控安全事件</li>
-              <li>遵守数据保护法规</li>
-            </ul>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">7. 免责声明</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">11. Contact Information</h2>
             <p className="text-gray-700 mb-4">
-              在法律允许的最大范围内，我们不对以下情况承担责任：
-            </p>
-            <ul className="list-disc pl-6 text-gray-700 mb-4">
-              <li>服务中断或不可用</li>
-              <li>数据丢失或损坏</li>
-              <li>第三方行为或内容</li>
-              <li>间接、偶然或后果性损害</li>
-              <li>超出服务费用的损害</li>
-            </ul>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">8. 服务终止</h2>
-            <p className="text-gray-700 mb-4">
-              我们或您都可以随时终止服务：
-            </p>
-            <ul className="list-disc pl-6 text-gray-700 mb-4">
-              <li>用户可随时取消订阅</li>
-              <li>我们可因违反条款终止服务</li>
-              <li>终止后数据保留30天</li>
-              <li>用户可导出数据</li>
-              <li>某些条款在终止后仍然有效</li>
-            </ul>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">9. 争议解决</h2>
-            <p className="text-gray-700 mb-4">
-              任何争议应通过以下方式解决：
-            </p>
-            <ul className="list-disc pl-6 text-gray-700 mb-4">
-              <li>首先通过友好协商解决</li>
-              <li>协商不成，提交仲裁</li>
-              <li>适用新加坡法律</li>
-              <li>仲裁地点在新加坡</li>
-            </ul>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">10. 联系我们</h2>
-            <p className="text-gray-700 mb-4">
-              如有任何问题，请通过以下方式联系我们：
+              If you have any questions about these terms, please contact us:
             </p>
             <div className="bg-gray-50 p-6 rounded-lg">
-              <p className="text-gray-700 mb-2"><strong>邮箱：</strong> legal@point-insight.com</p>
-              <p className="text-gray-700 mb-2"><strong>电话：</strong> +65-1234-5678</p>
-              <p className="text-gray-700"><strong>地址：</strong> 新加坡</p>
+              <div className="space-y-2 text-sm text-gray-700">
+                <p><strong>Email:</strong> legal@point-insight.com</p>
+                <p><strong>Phone:</strong> +65-1234-5678</p>
+                <p><strong>Address:</strong> POINT INSIGHT INNOVATION PRIVATE LIMITED, Singapore</p>
+                <p><strong>Support:</strong> support@point-insight.com</p>
+              </div>
             </div>
           </section>
         </div>

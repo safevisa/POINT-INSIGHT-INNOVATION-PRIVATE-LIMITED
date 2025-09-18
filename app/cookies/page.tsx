@@ -7,215 +7,235 @@ export default function CookiesPage() {
       
       <div className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Cookie政策</h1>
-          <p className="text-gray-600">最后更新：2024年9月18日</p>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Cookie Policy</h1>
+          <p className="text-gray-600">Last updated: September 18, 2024</p>
         </div>
 
         <div className="prose max-w-none">
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. 什么是Cookie</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. What are Cookies</h2>
             <p className="text-gray-700 mb-4">
-              Cookie是当您访问网站时存储在您设备上的小型文本文件。它们帮助网站记住您的偏好设置，
-              改善您的浏览体验，并提供个性化内容。
+              Cookies are small text files stored on your device when you visit a website. They help websites remember your preferences,
+              improve your browsing experience, and provide personalized content.
             </p>
             <div className="bg-blue-50 p-6 rounded-lg">
-              <h3 className="text-lg font-semibold text-blue-900 mb-2">Cookie的作用</h3>
+              <h3 className="text-lg font-semibold text-blue-900 mb-2">How Cookies Work</h3>
               <ul className="text-blue-800 text-sm space-y-1">
-                <li>• 记住您的登录状态</li>
-                <li>• 保存您的偏好设置</li>
-                <li>• 分析网站使用情况</li>
-                <li>• 提供个性化内容</li>
-                <li>• 改善网站性能</li>
+                <li>• Remember your login status</li>
+                <li>• Save your preferences</li>
+                <li>• Analyze website usage</li>
+                <li>• Provide personalized content</li>
+                <li>• Improve website performance</li>
               </ul>
             </div>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. 我们使用的Cookie类型</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. Types of Cookies We Use</h2>
             
             <div className="space-y-6">
               <div className="bg-green-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-green-900 mb-3">必要的Cookie</h3>
+                <h3 className="text-lg font-semibold text-green-900 mb-3">Essential Cookies</h3>
                 <p className="text-green-800 text-sm mb-3">
-                  这些Cookie对于网站的基本功能是必需的，无法关闭。它们通常只响应您所做的操作，
-                  如设置隐私偏好、登录或填写表单。
+                  These cookies are necessary for the basic functionality of the website and cannot be disabled. They usually only respond to actions you take,
+                  such as setting privacy preferences, logging in, or filling out forms.
                 </p>
                 <div className="text-sm text-green-700">
-                  <p><strong>用途：</strong> 身份验证、安全、基本功能</p>
-                  <p><strong>存储时间：</strong> 会话期间或最多1年</p>
-                  <p><strong>示例：</strong> 登录状态、购物车内容、语言偏好</p>
+                  <p><strong>Purpose:</strong> Authentication, security, basic functionality</p>
+                  <p><strong>Storage Duration:</strong> Session or up to 1 year</p>
+                  <p><strong>Examples:</strong> Login status, shopping cart contents, language preferences</p>
                 </div>
               </div>
 
               <div className="bg-yellow-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-yellow-900 mb-3">功能Cookie</h3>
+                <h3 className="text-lg font-semibold text-yellow-900 mb-3">Analytics Cookies</h3>
                 <p className="text-yellow-800 text-sm mb-3">
-                  这些Cookie使网站能够提供增强的功能和个性化。它们可能由我们或第三方设置。
+                  These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.
                 </p>
                 <div className="text-sm text-yellow-700">
-                  <p><strong>用途：</strong> 记住偏好、个性化体验</p>
-                  <p><strong>存储时间：</strong> 最多2年</p>
-                  <p><strong>示例：</strong> 主题设置、字体大小、位置信息</p>
-                </div>
-              </div>
-
-              <div className="bg-blue-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-blue-900 mb-3">分析Cookie</h3>
-                <p className="text-blue-800 text-sm mb-3">
-                  这些Cookie帮助我们了解访问者如何与网站互动，通过收集和报告信息匿名进行。
-                </p>
-                <div className="text-sm text-blue-700">
-                  <p><strong>用途：</strong> 网站分析、性能监控</p>
-                  <p><strong>存储时间：</strong> 最多2年</p>
-                  <p><strong>示例：</strong> Google Analytics、页面浏览量、停留时间</p>
+                  <p><strong>Purpose:</strong> Website analytics, performance monitoring</p>
+                  <p><strong>Storage Duration:</strong> Up to 2 years</p>
+                  <p><strong>Examples:</strong> Google Analytics, page views, user behavior</p>
                 </div>
               </div>
 
               <div className="bg-purple-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-purple-900 mb-3">营销Cookie</h3>
+                <h3 className="text-lg font-semibold text-purple-900 mb-3">Functional Cookies</h3>
                 <p className="text-purple-800 text-sm mb-3">
-                  这些Cookie用于跟踪访问者跨网站的活动，以显示相关和吸引人的广告。
+                  These cookies enable enhanced functionality and personalization, such as videos and live chat features.
                 </p>
                 <div className="text-sm text-purple-700">
-                  <p><strong>用途：</strong> 广告投放、营销分析</p>
-                  <p><strong>存储时间：</strong> 最多1年</p>
-                  <p><strong>示例：</strong> 广告偏好、兴趣标签、转化跟踪</p>
+                  <p><strong>Purpose:</strong> Enhanced functionality, personalization</p>
+                  <p><strong>Storage Duration:</strong> Up to 1 year</p>
+                  <p><strong>Examples:</strong> Video preferences, chat settings, user interface customization</p>
+                </div>
+              </div>
+
+              <div className="bg-red-50 p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-red-900 mb-3">Marketing Cookies</h3>
+                <p className="text-red-800 text-sm mb-3">
+                  These cookies are used to track visitors across websites to display relevant and engaging advertisements.
+                </p>
+                <div className="text-sm text-red-700">
+                  <p><strong>Purpose:</strong> Advertising, marketing, social media integration</p>
+                  <p><strong>Storage Duration:</strong> Up to 1 year</p>
+                  <p><strong>Examples:</strong> Facebook Pixel, Google Ads, retargeting</p>
                 </div>
               </div>
             </div>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">3. 第三方Cookie</h2>
-            <p className="text-gray-700 mb-4">
-              我们可能使用以下第三方服务，它们可能会设置自己的Cookie：
-            </p>
-            <div className="overflow-x-auto">
-              <table className="min-w-full bg-white border border-gray-200">
-                <thead className="bg-gray-50">
-                  <tr>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">服务商</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">用途</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Cookie类型</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">更多信息</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200">
-                  <tr>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Google Analytics</td>
-                    <td className="px-6 py-4 text-sm text-gray-900">网站分析</td>
-                    <td className="px-6 py-4 text-sm text-gray-900">分析</td>
-                    <td className="px-6 py-4 text-sm text-blue-600"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">隐私政策</a></td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Stripe</td>
-                    <td className="px-6 py-4 text-sm text-gray-900">支付处理</td>
-                    <td className="px-6 py-4 text-sm text-gray-900">功能</td>
-                    <td className="px-6 py-4 text-sm text-blue-600"><a href="https://stripe.com/privacy" target="_blank" rel="noopener noreferrer">隐私政策</a></td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Hotjar</td>
-                    <td className="px-6 py-4 text-sm text-gray-900">用户体验分析</td>
-                    <td className="px-6 py-4 text-sm text-gray-900">分析</td>
-                    <td className="px-6 py-4 text-sm text-blue-600"><a href="https://www.hotjar.com/legal/policies/privacy/" target="_blank" rel="noopener noreferrer">隐私政策</a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. 如何管理Cookie</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">3. How We Use Cookies</h2>
+            <div className="space-y-4">
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">浏览器设置</h3>
-                <p className="text-gray-700 text-sm mb-3">
-                  您可以通过浏览器设置控制Cookie：
-                </p>
-                <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Chrome: 设置 &gt; 隐私和安全 &gt; Cookie</li>
-                  <li>• Firefox: 选项 &gt; 隐私与安全 &gt; Cookie</li>
-                  <li>• Safari: 偏好设置 &gt; 隐私 &gt; Cookie</li>
-                  <li>• Edge: 设置 &gt; Cookie和站点权限</li>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Website Functionality</h3>
+                <ul className="text-gray-700 text-sm space-y-1">
+                  <li>• Maintain user login sessions</li>
+                  <li>• Remember user preferences and settings</li>
+                  <li>• Enable shopping cart functionality</li>
+                  <li>• Provide personalized content and recommendations</li>
                 </ul>
               </div>
+
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">Cookie同意管理</h3>
-                <p className="text-gray-700 text-sm mb-3">
-                  您可以通过我们的Cookie设置中心管理偏好：
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Analytics and Performance</h3>
+                <ul className="text-gray-700 text-sm space-y-1">
+                  <li>• Track website traffic and usage patterns</li>
+                  <li>• Monitor website performance and loading times</li>
+                  <li>• Identify popular content and features</li>
+                  <li>• Improve user experience based on data</li>
+                </ul>
+              </div>
+
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Marketing and Advertising</h3>
+                <ul className="text-gray-700 text-sm space-y-1">
+                  <li>• Display relevant advertisements</li>
+                  <li>• Track campaign effectiveness</li>
+                  <li>• Enable social media sharing</li>
+                  <li>• Provide targeted content and offers</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. Managing Your Cookie Preferences</h2>
+            <p className="text-gray-700 mb-4">
+              You have the right to control how cookies are used on our website. You can manage your cookie preferences through:
+            </p>
+            
+            <div className="space-y-4">
+              <div className="bg-blue-50 p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-blue-900 mb-2">Browser Settings</h3>
+                <p className="text-blue-800 text-sm mb-3">
+                  Most web browsers allow you to control cookies through their settings. You can:
                 </p>
-                <div className="space-y-2">
-                  <button className="w-full bg-primary-600 text-white px-4 py-2 rounded text-sm hover:bg-primary-700">
-                    管理Cookie设置
-                  </button>
-                  <p className="text-xs text-gray-600">
-                    您可以随时更改您的Cookie偏好设置
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">5. Cookie存储时间</h2>
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">存储期限分类</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">会话Cookie</h4>
-                  <p className="text-gray-700">在您关闭浏览器时自动删除</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">持久Cookie</h4>
-                  <p className="text-gray-700">在设定的到期时间后删除（通常1-2年）</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">第三方Cookie</h4>
-                  <p className="text-gray-700">由第三方服务商控制存储时间</p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">6. 禁用Cookie的影响</h2>
-            <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6">
-              <div className="flex">
-                <div className="ml-3">
-                  <h3 className="text-lg font-semibold text-yellow-800 mb-2">重要提醒</h3>
-                  <p className="text-yellow-700 text-sm mb-3">
-                    如果您禁用Cookie，可能会影响网站的某些功能：
-                  </p>
-                  <ul className="text-yellow-700 text-sm space-y-1">
-                    <li>• 无法保持登录状态</li>
-                    <li>• 无法保存偏好设置</li>
-                    <li>• 某些功能可能无法正常工作</li>
-                    <li>• 个性化内容将不可用</li>
-                    <li>• 购物车内容可能丢失</li>
+                <ul className="text-blue-700 text-sm space-y-1">
+                  <li>• Block all cookies</li>
+                  <li>• Allow only first-party cookies</li>
+                  <li>• Delete existing cookies</li>
+                  <li>• Set up notifications for new cookies</li>
+                </ul>
+                <div className="mt-4 text-sm text-blue-700">
+                  <p><strong>Browser Cookie Settings:</strong></p>
+                  <ul className="text-sm text-gray-700 space-y-1">
+                    <li>• Chrome: Settings &gt; Privacy and Security &gt; Cookies</li>
+                    <li>• Firefox: Options &gt; Privacy &amp; Security &gt; Cookies</li>
+                    <li>• Safari: Preferences &gt; Privacy &gt; Cookies</li>
+                    <li>• Edge: Settings &gt; Cookies and Site Permissions</li>
                   </ul>
                 </div>
               </div>
+
+              <div className="bg-green-50 p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-green-900 mb-2">Cookie Consent Banner</h3>
+                <p className="text-green-800 text-sm mb-3">
+                  When you first visit our website, you'll see a cookie consent banner where you can:
+                </p>
+                <ul className="text-green-700 text-sm space-y-1">
+                  <li>• Accept all cookies</li>
+                  <li>• Reject non-essential cookies</li>
+                  <li>• Customize your cookie preferences</li>
+                  <li>• Learn more about our cookie usage</li>
+                </ul>
+              </div>
             </div>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">7. 联系我们</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">5. Third-Party Cookies</h2>
             <p className="text-gray-700 mb-4">
-              如果您对Cookie政策有任何疑问，请通过以下方式联系我们：
+              Our website may use third-party services that set their own cookies. These include:
+            </p>
+            
+            <div className="space-y-4">
+              <div className="bg-yellow-50 p-4 rounded-lg">
+                <h3 className="text-lg font-semibold text-yellow-900 mb-2">Google Analytics</h3>
+                <p className="text-yellow-800 text-sm">
+                  We use Google Analytics to understand how visitors use our website. Google Analytics cookies collect information anonymously.
+                </p>
+              </div>
+
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <h3 className="text-lg font-semibold text-blue-900 mb-2">Social Media</h3>
+                <p className="text-blue-800 text-sm">
+                  Social media platforms may set cookies when you interact with social sharing buttons or embedded content.
+                </p>
+              </div>
+
+              <div className="bg-purple-50 p-4 rounded-lg">
+                <h3 className="text-lg font-semibold text-purple-900 mb-2">Payment Processors</h3>
+                <p className="text-purple-800 text-sm">
+                  Payment processors like Stripe may set cookies to ensure secure transactions and fraud prevention.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">6. Impact of Disabling Cookies</h2>
+            <div className="bg-orange-50 p-6 rounded-lg">
+              <h3 className="text-lg font-semibold text-orange-900 mb-2">Important Notice</h3>
+              <p className="text-orange-800 text-sm mb-3">
+                Disabling certain cookies may affect the functionality of our website. Here's what you might experience:
+              </p>
+              <ul className="text-orange-700 text-sm space-y-1">
+                <li>• You may need to log in repeatedly</li>
+                <li>• Your preferences may not be saved</li>
+                <li>• Some features may not work properly</li>
+                <li>• The website may load slower</li>
+                <li>• You may see less relevant content</li>
+              </ul>
+            </div>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">7. Updates to This Policy</h2>
+            <p className="text-gray-700 mb-4">
+              We may update this Cookie Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons.
+            </p>
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <p className="text-gray-700 text-sm">
+                <strong>Last Updated:</strong> September 18, 2024<br/>
+                <strong>Next Review:</strong> September 18, 2025
+              </p>
+            </div>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">8. Contact Us</h2>
+            <p className="text-gray-700 mb-4">
+              If you have any questions about our use of cookies or this Cookie Policy, please contact us:
             </p>
             <div className="bg-gray-50 p-6 rounded-lg">
-              <p className="text-gray-700 mb-2"><strong>邮箱：</strong> privacy@point-insight.com</p>
-              <p className="text-gray-700 mb-2"><strong>电话：</strong> +65-1234-5678</p>
-              <p className="text-gray-700"><strong>地址：</strong> 新加坡</p>
+              <div className="space-y-2 text-sm text-gray-700">
+                <p><strong>Email:</strong> privacy@point-insight.com</p>
+                <p><strong>Phone:</strong> +65-1234-5678</p>
+                <p><strong>Address:</strong> POINT INSIGHT INNOVATION PRIVATE LIMITED, Singapore</p>
+              </div>
             </div>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">8. 政策更新</h2>
-            <p className="text-gray-700">
-              我们可能会不时更新本Cookie政策。任何重大变更将通过网站通知您。
-              我们建议您定期查看本页面以了解最新信息。
-            </p>
           </section>
         </div>
       </div>

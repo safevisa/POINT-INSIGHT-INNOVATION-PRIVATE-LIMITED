@@ -3,8 +3,16 @@ import { getServerSession } from "next-auth"
 import { authOptions } from "@/lib/auth"
 import { prisma } from "@/lib/prisma"
 
+// Check if we're in build time
+const isBuildTime = !process.env.DATABASE_URL
+
 export async function GET() {
   try {
+    // Skip processing during build time
+    if (isBuildTime) {
+      return NextResponse.json({ error: "Service unavailable during build" }, { status: 503 })
+    }
+
     const session = await getServerSession(authOptions)
     
     if (!session?.user?.id) {
